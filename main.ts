@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const Tower = SpriteKind.create()
+}
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     let nena: Sprite = null
     animation.runImageAnimation(
@@ -7,3 +10,4 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
 })
+tiles.loadMap(tiles.createSmallMap(tilemap`level2`))
