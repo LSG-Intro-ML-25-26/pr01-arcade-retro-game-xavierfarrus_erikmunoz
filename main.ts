@@ -11,3 +11,4 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 tiles.loadMap(tiles.createSmallMap(tilemap`level2`))
+tiles.coverAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
