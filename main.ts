@@ -1,4 +1,5 @@
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    let nena: Sprite = null
     animation.runImageAnimation(
     nena,
     assets.animation`nena-animation-down`,
@@ -6,6 +7,3 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
 })
-let nena: Sprite = null
-nena = sprites.create(assets.image`nena-front`, SpriteKind.Player)
-controller.moveSprite(nena)
